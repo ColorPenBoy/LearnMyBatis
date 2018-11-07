@@ -73,8 +73,6 @@ INSERT INTO `sys_privilege` VALUES('5', '单位维护', '/companies');
 
 
 
-
-
 DROP TABLE IF EXISTS `sys_user_role`;
 CREATE TABLE `sys_user_role` (
 
