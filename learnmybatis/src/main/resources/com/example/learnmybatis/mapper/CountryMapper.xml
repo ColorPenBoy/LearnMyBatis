@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!--mapper 的命名空间-->
+<mapper namespace="com.example.learnmybatis.mapper.CountryMapper">
+    <!-- 定义一个SELECT查询 -->
+    <!-- id属性：定义了当前 SELECT 查询的唯一一个 id -->
+    <!-- resultType属性：定义了当前查询的返回值类型 ，此处就是指实体类 Country -->
+    <select id="selectAll" resultType="Country"> select id, countryname, countrycode from country </select>
+</mapper>

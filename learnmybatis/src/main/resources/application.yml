@@ -1,0 +1,18 @@
+#mybatis:
+#  mapper-locations: classpath:mapping/*.xml #注意：一定要对应mapper映射xml文件的所在路径
+#  type-aliases-package: com.example.learnmybatis.model  # 注意：对应实体类的路径
+#  configuration:
+#    map-underscore-to-camel-case: true
+#    use-generated-keys: true
+#    use-column-label: true
+# 端口号
+server:
+  port: 9999
+  use-forward-headers: true
+
+spring:
+    datasource:
+        name: mybatis
+        url: jdbc:mysql://127.0.0.1:3306/mybatis?useSSL=false
+        username: root
+        password: 123456

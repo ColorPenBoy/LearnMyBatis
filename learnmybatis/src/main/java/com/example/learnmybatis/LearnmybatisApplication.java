@@ -1,0 +1,13 @@
+package com.example.learnmybatis;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
+
+@SpringBootApplication(exclude = {DataSourceAutoConfiguration.class})
+public class LearnmybatisApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(LearnmybatisApplication.class, args);
+    }
+}
